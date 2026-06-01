@@ -3,104 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Educação e Sustentabilidade no Agro</title>
+    <title>Educação e Agronegócio Sustentável</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <h1>Educação e Sustentabilidade no Agro</h1>
-    <p>O papel da educação no futuro sustentável do agronegócio</p>
-</header>
+    <header>
+        <div class="overlay">
+            <h1>🌱 Educação para um Agro Sustentável</h1>
+            <p>Conhecimento, inovação e sustentabilidade para o futuro do campo.</p>
+            <button onclick="rolar()">Saiba Mais</button>
+        </div>
+    </header>
 
-<nav>
-    <a href="#introducao">Introdução</a>
-    <a href="#ods">ODS</a>
-    <a href="#tecnologia">Tecnologia</a>
-    <a href="#conclusao">Conclusão</a>
-</nav>
+    <section id="introducao" class="card">
+        <h2>📚 Introdução</h2>
+        <p>
+            A educação é um dos pilares fundamentais para garantir um futuro sustentável
+            no agronegócio. Ela capacita profissionais para enfrentar desafios ambientais,
+            tecnológicos e produtivos, promovendo uma agricultura eficiente e responsável.
+        </p>
+    </section>
 
-<section id="introducao">
-    <h2>Importância da Educação</h2>
-    <p>
-        A educação é fundamental para preparar profissionais capazes de produzir
-        alimentos de forma sustentável, preservando os recursos naturais e
-        utilizando novas tecnologias.
-    </p>
+    <section class="card">
+        <h2>🌾 Importância da Educação para o Agro Sustentável</h2>
 
-    <button onclick="mostrarInfo()">Saiba Mais</button>
+        <div class="grid">
+            <div class="item">💧 Uso consciente da água</div>
+            <div class="item">🌱 Agricultura sustentável</div>
+            <div class="item">⚡ Redução do desperdício</div>
+            <div class="item">🤖 Inteligência Artificial</div>
+            <div class="item">🌍 Conservação ambiental</div>
+            <div class="item">📈 Maior produtividade</div>
+        </div>
+    </section>
 
-    <div id="extra" class="oculto">
-        <ul>
-            <li>Uso consciente da água.</li>
-            <li>Conservação do solo.</li>
-            <li>Redução de desperdícios.</li>
-            <li>Aumento da produtividade sustentável.</li>
-            <li>Aplicação de tecnologias modernas.</li>
-        </ul>
-    </div>
-</section>
+    <section class="card">
+        <h2>🎯 ODS Relacionados</h2>
 
-<section id="ods">
-    <h2>Relação com os ODS</h2>
+        <div class="ods-container">
+            <div class="ods">📖 Educação de Qualidade</div>
+            <div class="ods">🍽️ Fome Zero</div>
+            <div class="ods">♻️ Produção Responsável</div>
+            <div class="ods">🌡️ Ação Climática</div>
+            <div class="ods">🌳 Vida Terrestre</div>
+            <div class="ods">💼 Trabalho Decente</div>
+        </div>
+    </section>
 
-    <div class="card">
-        <h3>ODS 4 - Educação de Qualidade</h3>
-        <p>Promove conhecimentos voltados ao desenvolvimento sustentável.</p>
-    </div>
+    <section class="card">
+        <h2>🚜 Tecnologia e Inovação no Campo</h2>
 
-    <div class="card">
-        <h3>ODS 2 - Fome Zero</h3>
-        <p>Contribui para uma agricultura mais eficiente e sustentável.</p>
-    </div>
+        <div class="tech">
+            <div>📡 Agricultura de Precisão</div>
+            <div>🌐 Internet das Coisas (IoT)</div>
+            <div>🤖 Inteligência Artificial</div>
+            <div>☁️ Monitoramento Climático</div>
+            <div>🧪 Bioinsumos</div>
+            <div>♻️ Economia Circular</div>
+        </div>
+    </section>
 
-    <div class="card">
-        <h3>ODS 12 - Consumo Responsável</h3>
-        <p>Incentiva o uso racional dos recursos naturais.</p>
-    </div>
+    <section class="contador">
+        <h2>🌍 Impacto da Educação no Campo</h2>
 
-    <div class="card">
-        <h3>ODS 13 - Ação Climática</h3>
-        <p>Ajuda produtores a enfrentar mudanças climáticas.</p>
-    </div>
+        <div class="numeros">
+            <div>
+                <h3 id="num1">0</h3>
+                <p>Profissionais Capacitados</p>
+            </div>
 
-    <div class="card">
-        <h3>ODS 15 - Vida Terrestre</h3>
-        <p>Protege a biodiversidade e os ecossistemas.</p>
-    </div>
+            <div>
+                <h3 id="num2">0</h3>
+                <p>Tecnologias Sustentáveis</p>
+            </div>
 
-    <div class="card">
-        <h3>ODS 8 - Trabalho Decente</h3>
-        <p>Fortalece a economia rural e gera oportunidades.</p>
-    </div>
-</section>
+            <div>
+                <h3 id="num3">0</h3>
+                <p>Projetos Ambientais</p>
+            </div>
+        </div>
+    </section>
 
-<section id="tecnologia">
-    <h2>Tecnologia e Inovação</h2>
+    <section class="card conclusao">
+        <h2>✅ Conclusão</h2>
 
-    <ul>
-        <li>Agricultura de Precisão</li>
-        <li>Internet das Coisas (IoT)</li>
-        <li>Inteligência Artificial</li>
-        <li>Monitoramento Climático</li>
-        <li>Bioinsumos</li>
-    </ul>
-</section>
+        <p>
+            A educação desempenha um papel estratégico na construção de um agronegócio
+            sustentável. Ao formar profissionais conscientes, inovadores e preparados
+            para utilizar novas tecnologias, ela contribui para a preservação ambiental,
+            a segurança alimentar e o desenvolvimento econômico das comunidades rurais.
+        </p>
+    </section>
 
-<section id="conclusao">
-    <h2>Conclusão</h2>
-    <p>
-        A educação é essencial para o futuro sustentável do agronegócio,
-        contribuindo para a produção de alimentos, preservação ambiental e
-        desenvolvimento econômico.
-    </p>
-</section>
+    <footer>
+        <p>🌱 Educação e Sustentabilidade no Agronegócio | Projeto Educacional</p>
+    </footer>
 
-<footer>
-    <p>Projeto ODS - Educação e Sustentabilidade no Agro</p>
-</footer>
-
-<script src="script.js"></script>
-
+    <script src="script.js"></script>
 </body>
 </html>
